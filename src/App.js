@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// import { Route, Link } from "react-dom";
+import styled from "styled-components";
+import HeadContainer from "./container/HeadContainer";
+import MainContainer from "./container/MainContainer";
+import NavContainer from "./container/NavContainer";
+import GlobalStyle from "./GlobalStyle";
 
-function App() {
+const Layout = styled.div`
+  width: 1080px;
+  margin: 0 auto;
+  @media (max-width: 1080px) {
+    width: 100%;
+  }
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <GlobalStyle />
+      <HeadContainer />
+      <NavContainer />
+      <MainContainer />
+    </Layout>
   );
-}
-
+};
 export default App;
