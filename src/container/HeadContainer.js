@@ -10,7 +10,6 @@ const HeadWrapper = styled.div`
     width: calc(100% - 32px);
     height: 64px;
     margin: 0 16px 0 16px;
-    border-radius: 0 0 30px 0;
   }
 `;
 

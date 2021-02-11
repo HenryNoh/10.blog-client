@@ -1,25 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import Nav from "../component/Nav";
-
-const NavWrapper = styled.div`
+const MoreWrapper = styled.div`
   width: 100%;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
 
   @media (max-width: 1080px) {
     width: calc(100% - 32px);
-    height: 64px;
+    height: 100%;
     margin: 0 16px 0 16px;
   }
 `;
 
-const NavContainer = () => {
+const MoreContainer = () => {
   return (
-    <NavWrapper>
-      <Nav></Nav>
-    </NavWrapper>
+    <MoreWrapper>
+      <div>This is More Page</div>
+    </MoreWrapper>
   );
 };
 
-export default NavContainer;
+export default MoreContainer;
